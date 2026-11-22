@@ -19,6 +19,7 @@
 <script src="vendor/gsap/gsap.min.js" defer></script>
 <script src="vendor/gsap/ScrollTrigger.min.js" defer></script>
 <script type="module" src="js/main.js"></script>
+<style>.res-note{color:var(--ink-2);font-size:14px;margin:4px 0 10px;max-width:900px}</style>
 </head>
 <body class="is-loading">
 
@@ -287,31 +288,32 @@
 
   <div class="res-block">
     <div class="res-head"><h3>Network design · QOBLIB 08</h3><span>max link load · lower is better</span></div>
+    <p class="res-note">First on the hackathon leaderboard for all seven of <span class="mono">network18</span>–<span class="mono">network24</span>. The table lists the best checked file for each instance. The Grover improvements came after the leaderboard submissions; for <span class="mono">network23</span> the submitted value was 639,739.</p>
     <div class="res-table" id="resNetwork"></div>
   </div>
 
   <div class="res-block">
-    <div class="res-head"><h3>Portfolio optimisation · QOBLIB 06</h3><span>objective · lower is better</span></div>
+    <div class="res-head"><h3>Portfolio optimisation · QOBLIB 06</h3><span>hackathon leaderboard · lower is better</span></div>
     <div class="pf-grid">
       <div class="pf-card glass">
-        <div class="pf-big"><span class="count" data-to="36165">0</span></div>
-        <div class="pf-k">binary variables in <span class="mono">po_a400_t15_orig</span></div>
-        <p>The largest instance in the benchmark. Our quantum pipeline (QAOA windows, then Grover-simulated fusion) reaches <b class="mono">−3,169,650</b>, against <b class="mono">−2,986,716</b> from our earlier classical search. QOBLIB publishes no reference value for this instance.</p>
+        <div class="pf-big"><span class="count" data-to="57">0</span></div>
+        <div class="pf-k">first places on the hackathon leaderboard</div>
+        <p>Out of 71 portfolio configurations on the leaderboard, plus all seven network instances from <span class="mono">network18</span> to <span class="mono">network24</span>.</p>
       </div>
       <div class="pf-card glass">
-        <div class="pf-big"><span class="count" data-to="61.8" data-dec="1" data-prefix="−" data-suffix="%">0</span></div>
-        <div class="pf-k">below best known on <span class="mono">a050_t15_orig</span>, λ = 10⁻²</div>
-        <p><b class="mono">−50,971</b> against the published <b class="mono">−31,504</b>. With high risk aversion, good portfolios are sparse hedges across about 20 assets, and an exact per-asset trajectory DP finds them.</p>
+        <div class="pf-big"><span class="count" data-to="416" data-prefix="−" data-suffix="%">0</span></div>
+        <div class="pf-k">below best known on <span class="mono">a050_t10_s01</span>, λ = 10⁻²</div>
+        <p><b class="mono">−11,605</b> against QOBLIB's best known <b class="mono">−2,248</b>, five times lower. On <span class="mono">a050_t10_s00</span> the gap is −317%, and on <span class="mono">a050_t15_orig</span> it is −170%.</p>
       </div>
       <div class="pf-card glass">
-        <div class="pf-big"><span class="count" data-to="7">0</span></div>
+        <div class="pf-big"><span class="count" data-to="19">0</span></div>
         <div class="pf-k">configurations below QOBLIB's best known value</div>
-        <p>Six from the classical search and one from paired-transfer QAOA (<span class="mono">a050_t15_s01</span>, λ = 5·10⁻⁴: <b class="mono">−304,333</b> vs <b class="mono">−304,289</b>).</p>
+        <p>Every other configuration with a published value matches it, including all <span class="mono">a010</span> and λ = 0 instances.</p>
       </div>
       <div class="pf-card glass">
-        <div class="pf-big"><span class="count" data-to="221">0</span></div>
-        <div class="pf-k">checked portfolio solutions</div>
-        <p>All 56 <span class="mono">a010</span> configurations match the best known value. The <span class="mono">a200</span> and <span class="mono">a400</span> instances have no published reference, and this set now provides the first values for them.</p>
+        <div class="pf-big"><span class="count" data-to="36165">0</span></div>
+        <div class="pf-k">binary variables in <span class="mono">po_a400_t15_orig</span>, the largest instance</div>
+        <p>First on the leaderboard for five values of λ. At λ = 10⁻³ the objective is <b class="mono">−3,169,074</b>. At λ = 10⁻² it is <b class="mono">−1,513,140</b>, against <b class="mono">−883,103</b> for the next team.</p>
       </div>
     </div>
   </div>
